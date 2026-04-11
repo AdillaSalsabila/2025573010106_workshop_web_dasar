@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --bg-light: #f4f4f4;
+    --white: #ffffff;
+    --font-main: 'Segoe UI', Arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--bg-light);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.btn-subscribe {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero {
+    background-color: var(--white);
+    padding: 40px 5%;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.meta {
+    color: #777;
+    margin-bottom: 20px;
+}
+.cover-img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+.main-container {
+    display: flex;
+    padding: 40px 5%;
+    gap: 30px; 
+}
+.content {
+    flex: 70%; 
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+}
+.sidebar {
+    flex: 30%; 
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 5%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 40px;
+}
+.footer-col {
+    flex: 1; 
+    padding: 0 20px;
+}
+.footer-col ul {
+    list-style: none;
+}
+@media (max-width: 768px) {
+    .main-container, .footer {
+        flex-direction: column; 
+    }
+}
+
+
+
+

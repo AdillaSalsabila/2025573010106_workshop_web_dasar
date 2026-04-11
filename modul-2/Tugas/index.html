@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil diri - Adilla salsabila</title>
+   <style>
+        
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; }
+        header, footer { background: #2c3e50; color: white; text-align: center; padding: 2rem 1rem; }
+        nav { background: #34495e; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #3498db; }
+        main { max-width: 800px; margin: auto; padding: 20px; }
+        section { padding: 80px 0 40px; border-bottom: 1px solid #ddd; }
+        .profile-img { border-radius: 50%; width: 180px; height: 180px; object-fit: cover; border: 5px solid #3498db; }
+        form div { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; }
+        input, textarea, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #2980b9; }
+        footer a { color: #3498db; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Halo, Selamat Datang!</h1>
+        <p>Halaman Profil Diri Digital</p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main>
+        
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <img src="https://i.pinimg.com/736x/4a/14/f2/4a14f234bcfe12480a526c60fc8a10c7.jpg" alt="https://id.pinterest.com/pin/332914597479492236/" class="profile-img">
+            <p><strong>Nama:</strong> Adilla salsabila</p>
+            <p><strong>Jurusan:</strong> Teknik Informatika</p>
+            <p><strong>Universitas:</strong> politeknik negeri lhokseumawe</p>
+            <p><strong>Bio Singkat:</strong> Saya adalah seorang pembelajar yang bersemangat di bidang teknologi informasi, khususnya pengembangan web modern.</p>
+        </section>
+
+        <section id="keahlian">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>HTML5 & CSS3 (teknis)</li>
+                <li>Dasar JavaScript (teknis)</li>
+                <li>gambar manual (Non-teknis)</li>
+                <li>Manajemen Waktu (Non-teknis)</li>
+            </ul>
+        </section>
+
+        <section id="pengalaman">
+            <h2>Pengalaman / Riwayat</h2>
+            <ol>
+                <li>Panitia lomba aljazeera osdamor_pi - 2025</li>
+                <li>Ketua kesenian Osdamor_pi -2024_2025</li>
+                <li>Lulus Mas Yapena Arun- 2025</li>
+            </ol>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <form action="#">
+                <div>
+                    <label for="nama_pengirim">Nama Pengirim:</label>
+                    <input type="text" id="nama_pengirim" name="nama_pengirim" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="subjek">Subjek:</label>
+                    <select id="subjek" name="subjek">
+                        <option value="diskusi">Diskusi Proyek</option>
+                        <option value="penawaran">Penawaran Kerja</option>
+                        <option value="tanya">Tanya-tanya</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Adilla salsabila. All Rights Reserved.</p>
+        <p>
+            Ikuti saya di: 
+            <a href="https://github.com/AdillaSalsabila/2025573010106_workshop_web_dasar.git">GitHub</a> | 
+            <a href="https://linkedin.com/in/username">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>
+

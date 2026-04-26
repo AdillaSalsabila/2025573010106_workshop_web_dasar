@@ -21,7 +21,6 @@ padding: 1.5rem;
 text-align: center;
 border-radius: 6px;
 }
-/* ── Layout Halaman ── */
 .layout-halaman {
 display: grid;
 grid-template-columns:
@@ -61,7 +60,6 @@ grid-area: footer;
 background: #2C3E50;
 color: white; padding: 1rem;
 }
-/* ── Grid Responsif Otomatis ── */
 .grid-auto {
 display: grid;
 

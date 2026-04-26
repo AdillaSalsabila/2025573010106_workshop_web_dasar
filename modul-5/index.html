@@ -1,80 +1,23 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS</title>
-  </head>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tailwind CSS</title>
+</head>
+<body class="bg-gray-50 p-8">
+<h1 class="text-3xl font-bold text-blue-600 mb-4">Halo Tailwind CSS!</h1>
+<p class="text-gray-600 text-lg">
+Jika teks ini muncul biru dan besar, Tailwind sudah berjalan.
+</p>
+<button
 
-<!-- Form Section — tambahkan setelah </section> kartu -->
-<section class="mt-16 max-w-xl mx-auto">
-<h2 class="text-3xl font-bold text-slate-900 text-center mb-8">
+class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-
+colors"
 
-</h2>
-<form class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8
-space-y-5">
-<!-- Input Group -->
-<div>
-<label class="block text-sm font-semibold text-slate-700 mb-1.5"
-for="nama">
-Nama Lengkap
-</label>
-<input
-id="nama" type="text"
-placeholder="Masukkan nama kamu"
-class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm
-focus:outline-none focus:ring-2 focus:ring-cyan-500
-focus:border-transparent transition">
-</div>
-<div>
-<label class="block text-sm font-semibold text-slate-700 mb-1.5"
-for="email">
-Alamat Email
-</label>
-<input
-id="email" type="email"
-placeholder="contoh@email.com"
-class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm
-focus:outline-none focus:ring-2 focus:ring-cyan-500
-focus:border-transparent transition">
-</div>
-<div>
-<label class="block text-sm font-semibold text-slate-700 mb-1.5"
-for="kelas">
-Pilih Kelas
-</label>
-<select
-id="kelas"
-class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm
-bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500
-focus:border-transparent transition">
-<option value="">-- Pilih kelas --</option>
-<option>Kelas A — Senin/Rabu</option>
-<option>Kelas B — Selasa/Kamis</option>
-</select>
-</div>
-<div>
-<label class="block text-sm font-semibold text-slate-700 mb-1.5"
-
-for="pesan">
-Pertanyaan (opsional)
-</label>
-<textarea
-id="pesan" rows="3"
-placeholder="Ada yang ingin ditanyakan?"
-class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm
-resize-none focus:outline-none focus:ring-2 focus:ring-cyan-500
-focus:border-transparent transition"></textarea>
-</div>
-<button type="submit"
-class="w-full bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700
-text-white font-bold py-3 rounded-xl transition-colors
-focus:outline-none focus:ring-2 focus:ring-cyan-500
-focus:ring-offset-2">
-Daftar Sekarang →
+>
+Klik Saya
 </button>
-</form>
-</section></html>
 <script type="module" src="/src/main.js"></script>
 </body>
+</html>

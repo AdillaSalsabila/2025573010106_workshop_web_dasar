@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Definisi Variabel Tema & Warna Custom */
+@theme {
+  --color-art-gold: #d4af37;
+  --font-serif: "Playfair Display", serif;
+}
+
+/* Konfigurasi Dark Mode v4 agar mendukung class="dark" */
+@variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  /* 1. Komponen Tombol Elegan */
+  .btn-art {
+    @apply px-8 py-3 rounded-full font-bold border-2 transition-all duration-500 
+           border-[--color-art-gold] text-[--color-art-gold] 
+           hover:bg-[--color-art-gold] hover:text-white
+           dark:border-amber-500 dark:text-amber-500 dark:hover:bg-amber-500 dark:hover:text-black;
+  }
+
+  /* 2. Komponen Kartu Lukisan */
+  .painting-card {
+    @apply relative overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-500 
+           hover:shadow-2xl hover:-translate-y-3 dark:bg-zinc-900 border dark:border-zinc-800;
+  }
+
+  /* 3. Komponen Label/Badge */
+  .section-label {
+    @apply text-xs uppercase tracking-[0.4em] text-[--color-art-gold] font-black mb-6 block;
+  }
+}
+
+/* Base Styles untuk kelancaran Transisi Warna */
+@layer base {
+  body {
+    @apply bg-slate-50 text-zinc-900 transition-colors duration-500 antialiased;
+  }
+  
+  .dark body {
+    @apply bg-black text-zinc-300;
+  }
+}

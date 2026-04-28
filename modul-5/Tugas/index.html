@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Exhibition 2026 | GalleriaArt</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="font-sans">
+
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-lg border-b border-zinc-100 dark:border-zinc-800">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-serif font-bold italic tracking-tighter dark:text-white">
+                Galleria<span class="text-[--color-art-gold]">Art</span>
+            </div>
+
+            <ul class="hidden md:flex space-x-10 font-semibold text-sm uppercase tracking-widest">
+                <li><a href="#hero" class="hover:text-[--color-art-gold] transition">Home</a></li>
+                <li><a href="#koleksi" class="hover:text-[--color-art-gold] transition">Koleksi</a></li>
+                <li><a href="#pricing" class="hover:text-[--color-art-gold] transition">Tiket</a></li>
+                <li><a href="#kontak" class="hover:text-[--color-art-gold] transition">Kontak</a></li>
+            </ul>
+
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="p-3 bg-zinc-100 dark:bg-zinc-800 rounded-full transition-transform active:scale-90" title="Ganti Tema">
+                    <span class="dark:hidden text-xl">🌙</span>
+                    <span class="hidden dark:inline text-xl text-yellow-400">☀️</span>
+                </button>
+                <div class="md:hidden text-2xl cursor-pointer">☰</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="py-24 px-6 text-center max-w-5xl mx-auto">
+            <span class="section-label animate-bounce">Pameran Terbesar 2026</span>
+            <h1 class="text-5xl md:text-8xl font-serif font-black dark:text-white mb-8 leading-[1.1]">
+                Keajaiban Dalam <br>
+                <span class="italic text-[--color-art-gold]">Setiap Goresan.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Bergabunglah dalam pameran lukisan kontemporer yang menyatukan imajinasi dan realita di jantung kota Lhokseumawe.
+            </p>
+            <a href="#koleksi" class="btn-art inline-block shadow-xl shadow-amber-500/10">Jelajahi Galeri</a>
+        </section>
+
+        <section id="koleksi" class="max-w-7xl mx-auto px-6 py-24 border-t border-zinc-100 dark:border-zinc-800">
+            <h2 class="text-4xl font-serif font-bold mb-16 dark:text-white text-center">Koleksi Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="painting-card group"> 
+                <div class="h-80 w-full overflow-hidden">
+                <img src=" https://i.pinimg.com/736x/3a/55/7c/3a557c666a3c3c83044f282a8c24c488.jpg" 
+             alt="Deskripsi Lukisan" 
+             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+    </div> <div class="p-8">
+        <h3 class="mb-1 text-xl font-bold dark:text-white">The stronggest flower</h3>
+        <p class="text-lg font-bold text-[--color-art-gold]">Rp 12.000.000</p>
+
+                    </div>
+                </div>
+                <div class="painting-card group"> 
+    
+    <div class="h-80 w-full overflow-hidden">
+        <img src=" https://i.pinimg.com/1200x/f4/af/20/f4af206794a9eba0bd1caa95b317f411.jpg" 
+             alt="Deskripsi Lukisan" 
+             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+    </div> <div class="p-8">
+        <h3 class="mb-1 text-xl font-bold dark:text-white">the golden dusk</h3>
+        <p class="text-lg font-bold text-[--color-art-gold]">Rp 12.000.000</p>
+
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="pricing" class="py-24 bg-zinc-100 dark:bg-zinc-900/40">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-4xl font-serif font-bold mb-12 dark:text-white">Presensi Kehadiran</h2>
+                <div class="bg-white dark:bg-zinc-800 p-12 rounded-[2rem] shadow-2xl border-t-8 border-[--color-art-gold] relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-[--color-art-gold]/10 rounded-full blur-3xl"></div>
+                    <p class="text-zinc-400 uppercase tracking-[0.3em] text-xs font-bold mb-4">Pass Eksklusif</p>
+                    <div class="text-7xl font-black mb-6 dark:text-white">Rp 170k</div>
+                    <p class="mb-10 dark:text-zinc-400 text-lg">Akses penuh ke semua galeri dan workshop bersama maestro.</p>
+                    <button class="btn-art w-full md:w-auto px-20">Ambil Tiket Sekarang</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-zinc-950 text-zinc-500 py-16 px-6 text-center border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-2xl font-serif italic text-white mb-6 font-bold">GalleriaArt</div>
+            <p class="mb-8">© 2026 Pameran Seni Lukis Nasional. Politeknik Negeri Lhokseumawe.</p>
+            <div class="flex justify-center gap-10">
+                <a href="#" class="hover:text-[--color-art-gold] transition font-bold uppercase text-xs tracking-widest">Instagram</a>
+                <a href="#" class="hover:text-[--color-art-gold] transition font-bold uppercase text-xs tracking-widest">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>

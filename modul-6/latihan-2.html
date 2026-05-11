@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Sederhana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4 md:p-10">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="flex justify-between items-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">Toko Online</h1>
+            <div class="relative">
+                <span class="text-2xl">🛒</span>
+                <span id="cart-badge" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center hidden">0</span>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Product List -->
+            <div class="md:col-span-2">
+                <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Cards rendered by JS -->
+                </div>
+            </div>
+
+            <!-- Shopping Cart -->
+            <div class="bg-white p-6 rounded-lg shadow-md h-fit">
+                <h2 class="text-xl font-semibold mb-4 border-b pb-2">Keranjang Belanja</h2>
+                <div id="cart-items" class="space-y-4 mb-6">
+                    <p class="text-gray-500 text-sm italic">Keranjang kosong.</p>
+                </div>
+                <div class="border-t pt-4">
+                    <div class="flex justify-between font-bold text-lg">
+                        <span>Total:</span>
+                        <span id="total-price">Rp 0</span>
+                    </div>
+                    <button id="checkout-btn" class="w-full mt-4 bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="latihan-2.js"></script>
+</body>
+</html>

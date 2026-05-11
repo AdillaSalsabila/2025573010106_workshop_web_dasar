@@ -1,0 +1,28 @@
+/* Drag and Drop Visuals */
+.dragging {
+    opacity: 0.5;
+    border: 2px dashed #9333ea;
+}
+
+.todo-item {
+    transition: transform 0.2s ease;
+    cursor: grab;
+}
+
+.todo-item:active {
+    cursor: grabbing;
+}
+
+/* Priority Colors */
+.prio-tinggi { border-left: 4px solid #ef4444; }
+.prio-sedang { border-left: 4px solid #f59e0b; }
+.prio-rendah { border-left: 4px solid #10b981; }
+
+/* Inline Editing focus */
+.edit-input {
+    width: 100%;
+    border: 1px solid #9333ea;
+    padding: 2px 4px;
+    border-radius: 4px;
+    outline: none;
+}

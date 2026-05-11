@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Lengkap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen p-4 md:p-10">
+
+    <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-6">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">My Tasks</h1>
+
+        <!-- Task Input Section -->
+        <form id="todo-form" class="space-y-3 mb-8">
+            <div class="flex flex-col md:flex-row gap-2">
+                <input type="text" id="todo-input" placeholder="Apa yang perlu dilakukan? (3-100 karakter)" 
+                    class="flex-1 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                
+                <select id="priority-input" class="border rounded-lg px-3 py-2 bg-white">
+                    <option value="rendah">Rendah</option>
+                    <option value="sedang" selected>Sedang</option>
+                    <option value="tinggi">Tinggi</option>
+                </select>
+                
+                <button type="submit" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">Tambah</button>
+            </div>
+            <p id="validation-msg" class="text-red-500 text-sm hidden">Input harus 3-100 karakter!</p>
+        </form>
+
+        <!-- Filters & Counter -->
+        <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4 text-sm text-gray-600">
+            <div id="counter" class="font-medium text-purple-700">0 tugas tersisa</div>
+            
+            <div class="flex bg-gray-200 rounded-lg p-1" id="filter-buttons">
+                <button data-filter="all" class="px-4 py-1 rounded-md bg-white shadow-sm font-bold">Semua</button>
+                <button data-filter="active" class="px-4 py-1 rounded-md hover:bg-gray-300">Aktif</button>
+                <button data-filter="completed" class="px-4 py-1 rounded-md hover:bg-gray-300">Selesai</button>
+            </div>
+
+            <button id="clear-completed" class="text-red-500 hover:underline">Hapus Semua Selesai</button>
+        </div>
+
+        <!-- Todo List Container -->
+        <ul id="todo-list" class="space-y-3">
+            <!-- Items injected by JavaScript -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

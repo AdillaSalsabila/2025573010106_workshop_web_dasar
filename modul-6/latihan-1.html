@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Interaktif</title>
+    <style>
+        .calculator { width: 300px; margin: 50px auto; font-family: sans-serif; }
+        .display { width: 100%; height: 50px; text-align: right; margin-bottom: 10px; font-size: 24px; }
+        .buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+        button { padding: 20px; font-size: 18px; cursor: pointer; }
+        .operator { background-color: #f0ad4e; }
+        .equal { background-color: #5cb85c; grid-column: span 2; }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <input type="text" class="display" id="display" disabled value="0">
+    <div class="buttons" id="btn-container">
+        <!-- Using data-* attributes for values -->
+        <button data-type="clear">C</button>
+        <button data-type="operator" data-val="/">÷</button>
+        <button data-type="operator" data-val="*">×</button>
+        <button data-type="operator" data-val="-">-</button>
+        
+        <button data-type="number" data-val="7">7</button>
+        <button data-type="number" data-val="8">8</button>
+        <button data-type="number" data-val="9">9</button>
+        <button data-type="operator" data-val="+">+</button>
+        
+        <button data-type="number" data-val="4">4</button>
+        <button data-type="number" data-val="5">5</button>
+        <button data-type="number" data-val="6">6</button>
+        <button data-type="number" data-val=".">.</button>
+        
+        <button data-type="number" data-val="1">1</button>
+        <button data-type="number" data-val="2">2</button>
+        <button data-type="number" data-val="3">3</button>
+        <button data-type="equal">=</button>
+        
+        <button data-type="number" data-val="0" style="grid-column: span 2;">0</button>
+    </div>
+</div>
+
+<script src="latihan-1.js"></script>
+</body>
+</html>
